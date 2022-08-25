@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 #encabezado {
     background-color: #222222;
     color: white;
@@ -6,13 +13,21 @@
     justify-content: space-between;
     width: 100%;
     height:100px;
+    align-items: center;
 }
 
-#navegacion {
+#navegacion ul {
     display:flex;
     justify-content: space-around;
+    padding: 0 50px;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    top: 15%;
 }
-
+#navegacion ul li {
+    margin: 20px;
+}
 h3{
     margin: 30px 4px;
 }
@@ -20,15 +35,108 @@ h2 {
     margin: 0px 4px;
 }
 #principal {
-    background-color:rgb(187, 194, 201);
+    background-color:rgb(231, 234, 237);
     display: flex;
+    justify-content: center;
+    height: 65vh;
+    align-items: center;
 }
 #promo{
     background-image:url('../img/fondo-promo.jpg');
     background-size: contain;
     width: 490px;
     height:350px;
-    border-radius:5%;
+    border-radius:2%;
     display:flex;
+    position: relative;
+    margin: 5px;
+}
 
+.text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+
+}
+.text-rojo{
+    color: red;
+}
+
+.text-blanco{
+    color: white;
+}
+
+#pizzas {
+    border-radius: 2%;
+    background-color: white;
+    width: 490px;
+    height: 350px;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.centrado {
+    position: absolute;
+    top: 8%;
+    left: 33%;
+}
+
+#listita {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.titulo-lista{
+    font-weight: 700;
+    font-size:20px;
+    margin:10px
+
+}
+.items-lista {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#pizza-cayendo {
+    position:absolute;
+    right: 15%;
+    top: 40%;
+    width: 92px;
+    height: 130px;
+}
+
+.pie-de-pagina {
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+}
+
+.logo {
+    width: 212px;
+    height: 80px;
+    margin: 0px 30px;
+}
+
+.nav-pie ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
+    list-style: none;
+    position: relative;
+    top: 15%;
+}
+
+.nav-pie ul li {
+    margin: 4px;
 }
